@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/alertify.core.css" rel="stylesheet" type="text/css"/>
+        <link href="css/alertify.default.css" rel="stylesheet" type="text/css"/>
+        <link href="css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.js" type="text/javascript"></script>
+        <script src="js/funciones.js" type="text/javascript"></script>
+        <script src="js/funcionesSC.js" type="text/javascript"></script>
+        <script src="js/alertify.js" type="text/javascript"></script>
+        <script src="js/bootstrap.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/jquery.dataTables.min.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #71dd8a;">
+    <br>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+               <li>
+                <img src="./img/logo2.jpg" alt="110" width="110">
+               </li>
+            <!--<a class="navbar-brand" href="#">Fundamentos de Gestion de Servicios TI</a> aqui comentamos la parte del nombre -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+            <!--Inicia el apartado de menu-->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown" >
+               <ul class="navbar-nav" >
+                   <a class="nav-link" href="#" id="menuInicio" style="color: white;" ><span class=" 	fas fa-info-circle"></span>Presentacion de la Materia</a>
+                   <li class="nav-item dropdown" >
+                   </li> 
+
+                    <!--Rutas de acceso para trabajos de primer corte--> 
+                   <li><a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" style="color: white;" >
+                           <span class="fas fa-chalkboard-teacher"></span>Primer Corte<div class="dropdown-menu">
+                           <a class="dropdown-item" href="#" id="menuPrimerCorte"><span class="fas fa-book-open"></span> 1.1 Trabajos en Clase</a>
+                           <a class="dropdown-item" href="#" id="menuCasoEstudio"><span class="far fa-file-pdf"></span> 1.2 Caso de Estudio</a>
+                           <a class="dropdown-item" href="#" id="menuCuadro"><span class="fas fa-file-signature"></span> 1.3 Cuadro Comparativo <br>Sistemas </a>
+                           <a class="dropdown-item" href="#" id="menuCasoEst"><span class="far fa-file-alt"></span> 1.4 Caso de Estudio</a>
+                           <a class="dropdown-item" href="#" id="menuGlosario"><span class="far fa-file-pdf"></span> 1.5 Glosario Refrente <br>A la Materia</a>
+                           <a class="dropdown-item" href="#" id="menuIndividual"><span class="fas fa-chalkboard-teacher"></span> 1.5 Trabajos Individuales</a>
+                           
+                       </div>
+                    </li>
+                    <!--Rutas de acceso para trabajos a segundo corte-->
+                    <li>  
+                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" style="color: white;" />
+                        <span class="fas fa-chalkboard-teacher"></span>Segundo Corte
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" id="menuApuntesSC"><span class="fas fa-book-open"></span> 2.1 Apuntes</a>
+                            <a class="dropdown-item" href="#" id="menuCEUSC"><span class="far fa-file-pdf"></span> 2.2 Caso de Estudio: Las Computadoras<br>Usables Van a Tabajar</a>
+                            <a class="dropdown-item" href="#" id="menuCEDSC"><span class="fas fa-file-signature"></span> 2.3 Caso de Estudio: ¿Es el momento<br>de la computacion en la nube?</a>
+                            <a class="dropdown-item" href="#" id="menuLSC"><span class="far fa-file-alt"></span> 2.4 Linea del Tiempo: Evolucion de la<br>Infraestructura de TI </a>
+                            <a class="dropdown-item" href="#" id="menuCETSC"><span class="far fa-file-pdf"></span> 2.5 Presentacion: Competencia con la<br>Ayuda de la TI </a>
+                            <a class="dropdown-item" href="#" id="menuPSC"><span class="far fa-file-pdf"></span> 2.6 Caso de Estudio: Inteligencia de Negocios<br>Centralizado al trabajo</a>
+                            <a class="dropdown-item" href="#" id="menuCECSC"><span class="far fa-file-pdf"></span> 2.7 Caso de Estudio: Impulso de la Gestion<br> de Flotillas de Ari con Analisis</a>
+                            <a class="dropdown-item" href="#" id="menuTISC"><span class="fas fa-chalkboard-teacher"></span> 2.8 Trabajos Individuales</a>
+                            
+                        </div>
+                    </li>
+                    
+                    <!--Rutas de acceso para ponencias-->
+                    <li>  
+                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" style="color: white;" >
+                            <span class="fas fa-chalkboard-teacher"></span>Ponencias Del Congreso<div class="dropdown-menu">
+                            <a class="dropdown-item" href="#" id="MPonen1"><span class="fas fa-comment-dots"></span>1. Nuevas Tencologias Con Huawei Mobile Services.</a>
+                            <a class="dropdown-item" href="#" id="MPonen2"><span class="fas fa-comment-dots"></span>2. Modelo Predictivo De Rendimiento Academico.</a>
+                            <a class="dropdown-item" href="#" id="MPonen3"><span class="fas fa-comment-dots"></span>3. Pre-Procesado. Tokenizacion y Obtencion de </br>Embendding De Textos En El Procesamientio Del</br>Lenguaje Natural.</a>
+                            <a class="dropdown-item" href="#" id="MPonen4"><span class="fas fa-comment-dots"></span>4. Diseño De Dispositivos Electronicos, Convertidores<br>De Energia,Refrigeracion De Satelites Con IA Y<br>Diseño De Controladores De Altitud Con IA.</a>
+                            <a class="dropdown-item" href="#" id="MPonen5"><span class="fas fa-comment-dots"></span>5. iCloud.</a>
+                            <a class="dropdown-item" href="#" id="MPonen6"><span class="fas fa-comment-dots"></span>6. Deteccion Y Segmentacion De Objetos Con Deep<br>Learning.</a>
+                            <a class="dropdown-item" href="#" id="MPonen7"><span class="fas fa-comment-dots"></span>7. Manofactura Aditiva.</a>
+                            <a class="dropdown-item" href="#" id="MPonen8"><span class="fas fa-comment-dots"></span>8. Agentes Conversascionales En IA: "Actualidad y Retos Futuros".</a>
+                            <a class="dropdown-item" href="#" id="MPonen9"><span class="fas fa-comment-dots"></span>9. Connecting IoT Devices to Cloud Services</a>
+                            <a class="dropdown-item" href="#" id="MPonen10"><span class="fas fa-comment-dots"></span>10. Inteligencia Artificial.</a>
+                            <a class="dropdown-item" href="#" id="MPonen11"><span class="fas fa-comment-dots"></span>11. App-Hipo</a>
+                            <a class="dropdown-item" href="#" id="MPonen12"><span class="fas fa-comment-dots"></span>12. Fortinet Security Fabric For OT</a>
+                            
+                        </div>
+                    </li>
+
+                    <!--Rutas de acceso para tercer corte-->
+                    <li>  
+                        <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" style="color: white;" >
+                            <span class="fas fa-chalkboard-teacher"></span>Tercer Corte<div class="dropdown-menu">
+                                <a class="dropdown-item" href="#" id="menuObjetivo"><span class="fas fa-book-open"></span> Objetivo De La Unidad</a>
+                                <a class="dropdown-item" href="#" id="menuTCApuntes"><span class="fas fa-book-open"></span> 1. Apuntes En Clase Tema 3</a>
+                                <a class="dropdown-item" href="#" id="menuTCApuntes2"><span class="fas fa-book-open"></span> 1.1 Apuntes En Clase Tema 5</a>
+                                <a class="dropdown-item" href="#" id="menuTCMArcos"><span class="far fa-file-pdf"></span> 2. Marcos De Referencia Gestion TI </a>
+                                <a class="dropdown-item" href="#" id="menuTCCasoP"><span class="fas fa-file-signature"></span> 3. CityTime de Nueva York: Un Proyecto De Que Si Fracasa</a>
+                                <a class="dropdown-item" href="#" id="menuTCCasoS"><span class="far fa-file-alt"></span> 4. DataCard Group Rediseña Su Forma De Trabajar</a>
+                                <a class="dropdown-item" href="#" id="menuTCEjercicio"><span class="far fa-file-pdf"></span> 5. Ejercicio de ITIL</a>                           
+                        </div>
+                    </li>
+                   <!--imagen-->
+                   <li>
+                    <img src="./img/logo.jpg" alt="150" width="150">
+                   </li>
+               
+                </ul>
+            </div>
+        <!--Fin de menu--> 
+        </nav>
+        <br>
+        <div class="row" id="divInicio">
+            <div class="col-12" style="text-align: center;" >
+                <h1 class="center">Fundamentos de Gestion de Servicios TI </h1><br> 
+                <img src="img/principal.jpg" alt="" style="width:300px; height:300px;border-radius:50%; ">         
+             </div>
+             <div class="row-col-6">
+               
+                <h1>Objetivo de la Materia: <br></h1>
+                <p>El estudiante deberá tomar un rol activo en cada tema de aprendizaje que le permitan desarrollar capacidades tanto
+                    específicas como genéricas a través de actividades de investigación principalmente documental y donde sea posible
+                    de campo, que lo conduzcan a un análisis, argumentación, evaluación, valoración, integración e interpretación de
+                    información que lo lleven a comprender la importancia de gestionar y alinear estratégicamente los servicios de TI que
+                    generen valor agregado a los procesos, productos y servicios de una organización.
+                </p>
+                <h3>Docente: </h3>
+                <p>Luis Angel Gonzalez Flores</p>
+                <h3>Alumnos:</h3>
+                <p>Efrain Alanis Gonzalez<br>
+                Iris Guadalupe Posadas Moreno<br>
+                Jose Armando Perez Gonzalez<br>
+                </p>
+                <h3>Grupo:</h3>
+                <p>701</p>
+                    
+              
+
+
+            </div>        
+        </div>
+
+    <!--Inicio de trabajos en clase-->
+    <div class="row" id="divTrabajoClase" style="display: none;">
+        <div class="row-12">
+            <h1>Trabajos En Clase</h1>
+            <br>
+
+            <h4>1.1 Tecnologias de informacion y Estrategias Empresariales</h4>
+            <p>Compartimos algunos conceptos basico sobre las TI y las Estrategias Empresariales plasmadas en un cuadro comparativo, que te serviran 
+                como ideas para poder comprender temas posteriores de la materia. </p>
+            <div align="center"> <img src="./img/Apunte1.jpeg" width="1000" alt="1000"></div>
+            <br>
+           
+            <h4>Ejemplo de Modelos de Negocio</h4> 
+            <p>Explicamos de como operaban anteriormente los negocios haciendo la comparacion de un antes y un despues
+               como operaba el negocio, si emplementaba tecnologias o no lo hacia, y posteriormente mostramos como es que
+               el negocio evoluciono.</p>
+            <p><h5>Primer Ejemplo: Escuchar Musica</h5><br>
+            Anteriormente se acostumbraba a escuchar musica mediante los caset o cd ya sea en grabadoras o stereos, con el paso de
+            de la tecnologia podemos escuchar musica desde plataformas digitales como Spotify o incluso youtube los cuales si quieres tener
+            ciertos "privilegios" como quitar los molestos anuncios para poder disfrutar de tus canciones. </p>
+            <div align="center"><img src="./img/musica.png" width="500" alt="500"></div>
+            <br><p><h5>Segundo Ejemplo: Compras</h5><br>
+            Las formas tradicionales de compras era que los compradores tenian que acuidar hasta las sucursales de sus tiendas de preferencia para poder
+            comprar sus productos quitandoles tiempo que podian aprovechar en otras cosas, pero desde el origen del e-commerce podemos comprar en linea 
+            infinidades de productos incluso podemos pagar desde la pagina por medio de transferencias o depositos sin tener que dar pagos fisico.
+            </p>
+            <div align="center"><img src="./img/tienda.png" width="500" alt="500"></div>
+            <br><p><h5>Tercer Ejemplo: Bibliotecas</h5><br>
+            Para poder leer un libro lo normal era acudir a la bibliotecas para poder realizar sus tareas o investigaciones buscando los libros que necesitaban,
+            ahora para poder obtener un libro podemos encontrarlo en plataformas digitales, u otros medio digitales donde podemos comprar u obetner de otra forma los libros.
+            </p><br>
+            <div align="center"><img src="./img/libros.png" width="500" alt="500"></div>
+
+            <h4>1.2 Impactos Organizacionales</h4>
+            <div align="center"><img src="./img/Apunte2.jpeg" width="500" alt="500"></div>
+            <br><br>
+            <h4>1.3 Fundamentos de Gestion del Negocio (BPM)</h4>
+            <div align="center"><img src="./img/Apunte3.jpeg" width="500" alt="500"></div>
+            <br><br>
+            <h4>1.4 Alineacion de los Servicios de Tecnologias de la Informacion con Politica y Objetivos Estrategicos, Organizacionales</h4>
+            <div align="center"><img src="./img/Apunte4.jpeg" width="500" alt="500">
+            <img src="./img/Apunte41.jpeg" width="500" alt="500">
+            <img src="./img/Apunte42.jpeg" width="500" alt="500"></div>
+            <br><br>
+            <h4>1.5 Evaluacion de los Servicios TI</h4>
+            <p><h5>Personal:</h5>
+            Tiene nuevos objetivos de evidencia la falta de estrategia y estructura, personales, sociales y laborales para alcanzar los objetivos planteados.<br>
+            <h5>Empresariales:</h5>
+            Alineacion con la tecnologia, carencia de estructura y objetivos claros, menor inversion en los sistemas de informacion y en las tencologias de informacion.<br>
+            <h5>Pasos para alcanzar las necesidades:</h5>
+            -Enumerar las necesidades del negocio.<br>
+            -Buscar tecnologias de informacion a las necesidades adecuadas.<br>
+            -Evaluar las oportunidades y fortalezas de la TI.<br>
+            -Identificar los riesgos tecnologicos y de operacion.<br>
+            -Analizar si la TI ofrece una ventaja para su empresa.<br>
+            -Definir metricas cuantificables referente a la mejora.<br>
+            -Evaluar beneficios a corto, media y largo plazo.<br>
+            -Determinar responsabilidades.</p>
+            <p><h5>Segun ITIL:</h5>
+            Gestion de quejas: <br>
+            -Registros de quejas.<br>
+            -Sugerencias y quejas.<br>
+            Encuestas de satisfaccion:<br>
+            -Cuestionario de encuesta.<br>
+            -Informes de evaluacion.<br>
+            Revision de servicios: <br>
+            -Cambios sugeridos a los servidores</p>            
+        </div>
+                                  
+    </div>
+    <!--Fin de trabajos en clase-->  
+    
+    <!--Inicio de caso de estudio-->
+    <div class="row" id="divCasoEst" style="display: none;">
+        <div class="row-12">
+            <h2>Caso de Estudio: <br> Home Depot se renueva a si misma con nuevos sistemas y formas de trabajar</h2>
+            <div align="center"> <img src="./img/CE1.jpeg" width="500" alt="500">
+                <img src="./img/CE1.2.jpeg" width="500" alt="500"></div>
+               
+        </div>
+                                  
+    </div>
+    <!--Fin de caso de estudio--> 
+
+     <!--Inicio de cuadro comparativo-->
+     <div class="row" id="divCuadro" style="display: none;">
+        <div class="row-12">
+            <h2>Cuadro Comparativo:</h2><br> 
+            <p>Conocer los sistemas de informacion que podemos aplicar para distintos grupos o negocios es parte fundamental  ya que son herramientas que nos
+               permiten mejorar a las organizaciones conectandose con sus empleados, proveedores, clientes por eso te compartimos el siguiente cuadro comparativo 
+               de algunos tipos de sistemas algunos datos que son importantes conocer de cada uno de ellos.
+            </p>
+            <div align="center"><embed src="./files/Cuadro Comparativo.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+               
+        </div>
+                                  
+    </div>
+    <!--Fin de cuadro comparativo--> 
+
+     <!--Inicio de caso de estudio 2-->
+     <div class="row" id="divCasoE" style="display: none;">
+        <div class="row-12">
+            <h2>Caso de Estudio: <br> Caso de Estudio TI en los Negocios</h2>
+            <div align="center"> <img src="./img/CE2.jpeg" width="500" alt="500">
+            <img src="./img/CE2.1.jpeg" width="500" alt="500"></div>  
+        </div>
+                                  
+    </div>
+    <!--Fin de caso de estudio2 --> 
+
+     <!--Inicio de glosario-->
+     <div class="row" id="divGlosario" style="display: none;">
+        <div class="row-12">
+            <h2>Glosario</h2><br>
+            <p>Conocer algunos conceptos basicos sobre la materia es importante pues habla de la capaidad del alumno para poder comprender que es lo que realiza dentro del aula
+               de clases asi que elaboramos un glosario con algunos conceptos que podran ayudarte mas adelante.
+            </p>
+            <div align="center"><embed src="./files/Glosario.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+               
+        </div>
+                                  
+    </div>
+    <!--Fin de glosario--> 
+
+     <!--Inicio de trabajos individuales-->
+     <div class="row" id="divIndividual" style="display: none;">
+        <div class="row-12">
+            <h2>Reportes de Lectura sobre las TIC'S</h2><br>
+            <p>Te compartimos los reportes de lectura de algunos compañeros del equipo </p>
+            <h5>Iris Gualupe Posadas Moreno</h5>
+            <div align="center"> <img src="./img/ReporteI.jpeg" width="500" alt="500"></div>  
+            <br>
+            <h5>Efrain Alanis Gonzalez</h5>
+            <div align="center"> <img src="./img/ReporteE.jpeg" width="500" alt="500"></div>  
+        </div>
+                                  
+    </div>
+    <!--Fin de trabajos individuales--> 
+
+    <!--Trabajos de segundo corte-->
+    <!--Inicio De Apuntes-->
+    <div class="row" id="divApuntesSC" style="display: none;">
+        <div class="row-12">
+            <h2>2.1 INFRAESTRUCTURA DE TI Y TECNOLOGÍAS EMERGENTE </h2>
+            <p>La infraestructura es la base de algo, no es solo lo que conforma y que es lo que se le puede ofrecer a las empresas.<br>
+                •	Plataformas computacionales: computadoras personales.<br>
+                •	Servicios de telecomunicación: conectar datos.<br>
+                •	Servicios de gestión de datos: almacenar y gestionar datos.<br>
+                •	Servicios de software de aplicación.<br>
+                •	Servicios de administración de instalaciones.<br>
+                •	Servicios de educación de TI.<br>
+                •	Servicio de investigación y desarrollo de TI.<br>
+                <br>
+                <br>
+                Impulsores tecnológicos en la evolución e infraestructura. Ley de Moore y la ley de almacenamiento digital masivo.<br>
+                Director de semiconductores, introducción del primer chip, microprocesador 1959
+                (1)	El poder de los microprocesadores se duplica cada 18 meses.<br>
+                (2)	El poder de cómputo se duplica cada 18 meses.<br>
+                (3)	El precio de los componentes de cómputo se reduce a la mitad de cada 18 meses.<br>
+                </p>
+                <br>
+                <h2>Estándares </h2>
+                <p>Son especificaciones que establecen la competitividad de los productos y la habilidad de comunicarse como red.<br>
+                    ASCII Lenguaje universal para dispositivos de entrada y salida.<br>
+                    COBOL Lenguaje enfocado a negocios.<br>
+                    UNIX SO poderoso multitareas y multiusuario.<br>
+                    Protocolo de comunicación TCP-IP Esquema de direccionamiento que permite comunicarse millones de computadoras.<br>
+                    Ethernet Estándares de red para conectar computadoras.<br>
+                </p>
+                <br>
+                <h2>Principales componentes de la infraestructura</h2>
+                <p>• Plataformas de hardware<br>
+                   • Plataforma de SO <br>7
+                   • Aplicaciones empresariales de software<br>
+                   • Administración y almacenamiento de datos<br>
+                   • Plataformas de red/ Telecomunicaciones <br>
+                   • Plataformas de internet<br>
+                </p>
+                <br>
+                <h2>CISC</h2>
+                <p>Es un sistema de instrucciones desarrollado por Intel que requiere de mucho tiempo para ser ejecutadas completamente. 
+                    Lo que sucede en CISC es que se reduce la cantidad de instrucciones de un software y se especializa en crear instrucciones complejas en el hardware, ya que el hardware siempre será mucho más rápido del software.
+                    <h3>Características</h3>
+                    <p>
+                    - El tamaño del código es pequeño lo que implica una baja necesidad de memoria RAM. <br>
+                    - Se requiere menos instrucciones para escribir un software.
+                    </p>
+                </p>
+                <br>
+                <h2>RISC </h2>
+                <p>Son procesadores que están diseñadas para ejecutar un número reducido de tipos de instrucciones que les permite operar a una velocidad más elevada.
+                    La arquitectura RISC principalmente requiere menos cantidad de hardware y una mayor flexibilidad de construcción 
+                    <h3>Características</h3>
+                    <p>- Ejecución en un único ciclo.<br>
+                    - Poco o ningún micro código.<br>
+                    - Pocos modos de direccionamiento.<br>
+                    - Diseño de registro.<br>
+                    </p>
+                </p>
+                <br>
+                <h2>2.3.1 Apoyo a la Toma de Decisiones en los Negocios</h2>
+                <p>Calidad de la informacion:<br>
+                    * Tiempo.<br>
+                    * Contexto.<br>
+                    * Forma.<br>
+                    * Estructurada.<br>
+                    * No Estruturada.<br>
+                    * Semi Estructurada.<br>
+                </p>
+                <br>
+                <h2>Sistemas de Apoyo a la Toma de Decisiones</h2>
+                <p>- Modelos Analiticos.<br>
+                - Bases de Datos Especializdas.<br>
+                - Las propias percepciones y Juicios.<br>
+                - Proceso de modelacion interactivo basado en compuradora para apoyar la toma de decisiones.</p>
+                <br>
+                <h2>Inteligencia:</h2>
+                <p>- Combinacion de practicas, capacidades y tecnologias usadas por las compañias para recopilar o integrar informacion.<br>
+                - Analisis de negocio, mineria de datos, herramientas de datos para ayudar a las empresas a tomar decisiones en base a datos.<br></p>
+                <h2>La Base:</h2>
+                <p>- Poca escalibilidad.<br>
+                - Multiples archivos para programas.<br>
+                - Seguridad defectuosa.<br>
+                - Falta de comparacion y disponibilidad de datos.</p>
+                <br>
+                <h2>Base de Datos</h2>
+                <p>* Normalizacion.<br>
+                * Operaciones.<br>
+                * Reduccion de Redundancia.<br>
+                * Diccionario de Datos.<br>
+                * Diagramas. </p>
+                <br>
+                <h2>Big Data</h2>
+                <p>+ Volumen.<br>
+                + Variedad.<br>
+                + Velocidad.</p>
+                <br>
+                <h2 class="center">Infraestructura de la inteligencia de datos</h2>
+                <p>- Almacen de datos.<br>
+                - Hadop.<br>
+                - Computacion en la memoria.</p>
+                <br>
+                <h2 class="center">Gobierno TI</h2>
+                <div align="center"> <img src="./img/ti.png" width="500" alt="500"></div>  
+                <p>El Gobierno de las TI es una responsabilidad del más alto nivel directivo y se encuentra en
+                    lo más alto de una pirámide que estaría basada en las operaciones de TI y la gestión de TI.
+                    El éxito del Gobierno de las TI va a estar ligado a la comprensión y apoyo que obtenga por
+                    parte del Equipo de Dirección de la universidad. Según la norma internacional ISO 38500,
+                    el Gobierno de las TI tiene como principal objetivo evaluar, dirigir y monitorizar las TI para
+                    que estas proporcionen el máximo valor posible a la organización.</p>
+                <h3>Segun SO IEC 38500:2008 Corporate Governance of Information Technology, Gobierno TI lo define como:</h3>
+                <p>El Gobierno de las TI es el sistema a través del cual se dirige y controla la utilización
+                    de las TI actuales y futuras. Supone la dirección y evaluación de los planes de utili-
+                    zación de las TI que den soporte a la organización y la monitorización de dicho uso
+                    para alcanzar lo establecido en los planes de la organización. Incluye las estrategias
+                    y políticas de uso de las TI dentro de la organización.</p>
+                <h2>Objetivos TI </h2>
+                <p>1. La universidad debe tener clara cuál es su estrategia de TI para toda la organización.<br>
+                    2. Alinear la estrategia institucional de la universidad y la estrategia de las TI.<br>
+                    3. Alcanzar los objetivos estratégicos de las TI mediante la utilización de sistemas integrales de
+                    Gobierno de las TI.<br>
+                    4. Disponer de una estructura de dirección y de modelos de toma de decisiones alineados
+                    con la estrategia de las TI.<br>
+                    5. Disponer de políticas y procedimientos de alto nivel para gestionar las TI que cumplan con
+                    las normativas y tengan en cuenta los estándares internacionales.<br>
+                    6. Tomar decisiones debidamente argumentadas y efectivas en relación a las TI.<br>
+                    7. Conocer el valor de las TI, alcanzar su valor de retorno y priorizar las inversiones en TI.<br>
+                    8. Los proyectos de TI deben alcanzar los objetivos planificados.<br>
+                    9. Definir una arquitectura de TI que incluya la definición de los procesos y la integración de
+                    los sistemas.<br>
+                    10. Disponer de las tecnologías necesarias para alcanzar los objetivos estratégicos de la
+                    universidad.<br></p>
+                <h2>Importancia del Gobierno TI en la Universidades</h2>
+                <p>• Establecer claramente su estrategia de TI y alinearla con la global de la universidad.<br>
+                    • Determinar quiénes son los responsables de la planificación estratégica de las
+                    TI, de la toma de decisiones y de la explotación de las TI.<br>
+                    • Ahorrar costes en las inversiones de TI, debido al establecimiento de gestión
+                    por proyectos y priorización de inversiones.<br>
+                    • Disminuir los riesgos propios de las TI gracias a una adecuada gestión.<br>
+                    • Disponer en todo momento de una evaluación y seguimiento del rendimiento
+                    de los procesos y servicios basados en TI mediante los indicadores adecuados.<br>
+                    • Alcanzar con más facilidad el cumplimiento normativo, la implantación de estándares internacionales y las certificaciones 
+                    de calidad relacionadas con el Gobierno de las TI.</p>
+                    <br>
+        </div>
+                                  
+    </div>
+    <!--Fin de Apuntes-->
+
+    <!--Inicio De Caso de Estudio uno-->
+    <div class="row" id="divCEUSC" style="display: none;">
+        <div class="row-12">
+            <h2>2.2 Caso de Estudio </h2><br>
+           <p>Caso de estudio de Las computadora usuables a trabajar ,trata de la comunicacion con internet por el lenguaje natural que se trabaja.</p>
+            <div align="center"><embed src="./files/CE1SC.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+        </div>
+                                  
+    </div>
+    <!--Fin de Caso de Estudio uno-->
+
+    <!--Inicio De Caso de estudios dos -->
+    <div class="row" id="divCEDSC" style="display: none;">
+        <div class="row-12">
+            <h2>2.3 Caso de Estudio </h2><br>
+            <p>Caso de estudio de Es el momento de la computacion de la nube, es el que rincipalmente incluye un nuevo sistema bancario.</p>
+            <div align="center"><embed src="./files/CE2SC.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+
+        </div>
+                                  
+    </div>
+    <!--Fin de Caso de estudios dos-->
+
+    <!--Inicio De Linea del tiempo-->
+    <div class="row" id="divLSC" style="display: none;">
+        <div class="row-12">
+            <h2>2.4 Linea del Tiempo</h2><br>
+            <p>Linea de tiempo de la infraestructura de la TI, es un programa utilizado por la nasa para poder enviar el nombre a la nube.</p>
+            <div align="center"><embed src="./files/LTSC.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+
+        </div>
+                                  
+    </div>
+    <!--Fin de Line de Tiempo-->
+
+    <!--Inicio De Caso de estudio tres-->
+    <div class="row" id="divCETSC" style="display: none;">
+        <div class="row-12">
+            <h2>2.5 Presentacion </h2><br>
+            <P>Presentacion Competencia con la ayuda de la tecnologia de la informacion, es una tecnologia de informacion que puede cambiarse de manera en la que compiten los negocios.</P>
+            <div align="center"><embed src="./files/PSC.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+
+        </div>
+                                  
+    </div>
+    <!--Fin de caso de estudio tres-->
+
+    <!--Inicio De Presentacion-->
+    <div class="row" id="divPSC" style="display: none;">
+        <div class="row-12">
+            <h2>2.6 Caso de Estudio </h2><br>
+            <p>Caso de estudio Inteligencia de negocio centralizada en el trabajo, puede estandarizar menos herramientas de inteligencia de negocio y hacerlas mas accsesibles a traves de su organizaciones</p>
+            <div align="center"><embed src="./files/CE3SC.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+
+        </div>
+                                  
+    </div>
+    <!--Fin de Presentacion-->
+
+    <!--Inicio De Caso de Estudio cuatro-->
+    <div class="row" id="divCECSC" style="display: none;">
+        <div class="row-12">
+            <h2>2.7 Caso de Estudio</h2><br>
+            <p>Caso de estudio impulso de la gestion de flotillade aris con analisis en tiempo real, que este se encarga de de todo el ciclo de vida y la operacion de una flotilla de vhiculos para sus cliente </p>
+            <div align="center"><embed src="./files/CE4SC.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+
+        </div>
+                                  
+    </div>
+    <!--Fin de caso de estudio cuatro-->
+
+
+    <!--Inicio De Caso de trabajos indivuales-->
+    <div class="row" id="divTISC" style="display: none;">
+        <div class="row-12">
+            <h2>2.9 Trabajos Individuales</h2><br>
+            <h2>Iris Guadalupe Posdas Moreno</h2>
+            <p>Infraestructura de TI, Infraestructura de TI en la empresa, son de gran importancia ya que cumplen un rol importante en nuestras vidas para atraves de ello poder realizar diferentes trabajos.</p>
+            <div align="center"><embed src="./files/TSCI.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+            <h2>Efrain Alanis Gonzalez</h2>
+            <p>Introduccion a infraestructura de TI, es un espacio fisico donde hay servidores y a su vex los equipos de redes son usuables y requiere acceso a un enfriamiento de los servidores.</p>
+            <div align="center"><embed src="./files/TSCE.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+
+        </div>
+                                  
+    </div>
+    <!--Fin de trabajos individuales-->
+    <!--Fin de trabajos segundop corte-->
+
+    <!--Ponencias de Tercer corte-->
+    <!--Ponencia uno-->
+     <div class="row" id="Ponen1" style="display: none;">
+        <div class="row-12">
+            <h2>1. Nuevas Tencologias Con Huawei Mobile Services.</h2><br>
+            <p><b>Ing. Alejandro Mota Guerrero </br>
+                Tema: “Nuevas tecnologías con Huawei Mobiles Services”</b></p>
+
+                <div align="center"> <img src="./img/Ponencia1.jpg" width="500" alt="500"></div>
+            </br>
+
+               <p> Todos tienen un smartphone con una gran infinidad de aplicaciones para hacer una gran de infinidad de tareas
+                Huawei tiene un ecosistema inteligente para todos los escenarios
+                Huawei Mobile service</br></br>
+                
+                HMS: creas aplicaciones o servicios para diferentes sistemas operativos para facilitar la vida del desarrollo
+                Ofrece una amplia gama de funcionalidades como:</br>
+
+               -Native apps</br>
+               -Quick apps</br>
+               -Web apps</br>
+               -HMS code 6</br>
+               -Android</br>
+               -Windows</br>
+               - IOS</br>
+               -Harmony</br></br>
+
+               HMS Core 6
+               Es una librería para programación para el desarrollo de aplicaciones 
+               Actualmente se tienen más de 99 librerías para que podamos tener acceso a las diferentes librerías para facilitarnos el desarrollo 
+               Ads kit 
+               Proporciona funcionalidades se acceso a a juncios de alta calidad y admite la monetización a devs 
+               Servicio de anuncios único de fácil monetización paran los desarrolladores
+               In-app purchases
+               Proporciona capacidades de pago de oferta virtual para sus aplicaciones
+               Map y Site Kit
+               Proporciona visualizaciones e integración de mapas personalizados, mejorando la experiencia de nuestros mapas.
+               Push kit
+               Estable
+               Fiable
+               Proceso multiplataforma
+               ML (Machine Learning) Kit
+               Un puente entre la I.A. y tu aplicación</br>
+                
+               -Text </br>
+               -video </br>
+               -Lenguajes</br>
+               -Face8body</br>
+               -Case study</br>
+               -Busca y compra</br>
+               -AE Engine</br>
+               -Proporciona capacidades de convergencia virtual y física 
+                </p>
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia dos-->
+     <div class="row" id="Ponen2" style="display: none;">
+        <div class="row-12">
+            <h2>2. Modelo Predictivo De Rendimiento Academico.</h2><br>
+            <p>
+            <b>Ing. Jairo Acosta Solano <br>
+            Tema: “Modelo predictivo de rendimiento académico”<br>
+            Institución: Facultad de ingeniería Colombia, corporación Universitaria Rafael Nuñez </b></p>
+                <br>
+            <div align="center"> <img src="./img/Ponencia2.jpg" width="500" alt="500"></div>
+            </br>
+
+            <p>
+        <b>Características </b><br>
+            •	Calidad de la educación en 1968.<br>
+            •	Atributos asociados <br>
+            •	Factores que que no discrimina particularidades de las regiones. <br><br>
+        <b>Objetivo general </b><br>
+            •	Desarrollar la evaluación de cuatro modelos de aprendizaje automático del rendimiento <br><br>
+       <b> Metodologias CRISP (CROSS-INDUSTRY ESTÁNDAR PROCES FOR DATA MINING)</b><br>
+            •	FASE 1: Entender el negocio <br>
+            •	FASE 2: Entender los datos <br>
+            •	FASE 3: Preparar los datos <br>
+            •	FASE 4: Modelo <br>
+            •	FASE 5: Evaluar <br>
+            •	FASE 6: Implementar<br>
+                </p>
+            
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia tres-->
+     <div class="row" id="Ponen3" style="display: none;">
+        <div class="row-12">
+            <h2>3. Pre-Procesado. Tokenizacion y Obtencion de Embendding De Textos En El Procesamientio Del Lenguaje Natural.</h2><br>
+            <p><b>Ing. Juan pablo Osuna Bonilla<br>
+                Tema: Pre-Procesada Tokenizacion y objetencion de Embendding de Textos En El Procesamientio Del Lenguaje Natural<br>
+                Institucion:Universidad Autónoma de Manizales-Colombia <br> </b></p>
+
+                <div align="center"> <img src="./img/Ponencia3.jpg" width="500" alt="500"></div>
+            </br>
+
+<p>                
+<b>¿Qué es?</b><br>
+PLN= Procesamiento de lenguaje Natural. <br>
+<b>Usos</b> <br>
+•	Reconocimiento y análisis de datos <br>
+•	Etiquetado de datos metodológicos <br>
+•	Manejo de datos semi-estructurado a no estructurado<br><br> 
+<b>Herramientas</b> <br>
+•	Bibliotecas de código abierto <br>
+•	Java <br>
+•	Apache <br>
+•	Stanford<br><br>
+<b>Característica</b> <br>
+•	Redes neuronales, andas analógicas, <br>
+•	Cada carácter está representado en un caso numérico<br> 
+•	Estratégico <br><br>
+<b>Cuando se trabaja con texto no se necesita convertirse con algún formato numérico<br>
+Proceso de tokenizacion</b> <br>
+•	Tokenizar = segmentar el texto en grupos de tokens<br><br>
+<b>Tokenizacion con NLTK</b> <br>
+•	Por palabra Word tokenizar <br>
+•	Por frases sent_tokeniza<br>
+•	Para diferenciar frases o sectorización <br>
+
+            </p>
+            
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia cuatro-->
+     <div class="row" id="Ponen4" style="display: none;">
+        <div class="row-12">
+            <h2>4. Diseño De Dispositivos Electronicos, Convertidores De Energia,Refrigeracion De Satelites Con IA Y Diseño De Controladores De Altitud Con IA.</h2><br>
+            <p><b>Dr. Juan Fernando García Mejía<br>
+                Institución: UAEMex Agencia Espacial Mexicana  <br>
+                Tema: “Diseño de dispositivos electrónicos, convertidores de energía, refrigeración de satélites con la IA y diseño de controladores”</b><br></p>
+                <div align="center"> <img src="./img/Ponencia4.jpg" width="500" alt="500"></div></br>
+                <p>
+                Actualmente, existen productos comerciales para automatizar invernaderos, debido a que la autonomía del proceso de cultivo facilita la eficiencia, 
+                así como también la velocidad del trabajo que se ejecuta, sin embargo, el acceso a estas tecnologías de automatización, suelen ser muy costosas para 
+                él productor y generalmente son empleadas para la producción a gran escala.<br>
+                En la mayoría de los sistemas, los objetivos recién mencionados no se pueden alcanzar 
+                por medio de la electrónica lineal, pues en ésta los dispositivos de semiconductores son operados en su región lineal (activa) y se usa un transformador 
+                de frecuencia de línea para el aislamiento eléctrico. Como ejemplo, considere el suministro eléctrico de la corriente constante (CC) de la figura 1-2a 
+                para proporcionar un voltaje. 
+                </p>
+            
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia cinco-->
+     <div class="row" id="Ponen5" style="display: none;">
+        <div class="row-12">
+            <h2>5. iCloud.</h2><br>
+            <p><b>Sandra Eugenia beristaning arroyo<br>
+                Tema: iCloud
+                Institución: CBS México </b></p>
+                <div align="center"> <img src="./img/Ponencia5.jpg" width="500" alt="500"></div></br>
+                
+                <p>
+                    <b> Que tienen en común</b> <br>
+                •	Dinero <br>
+                •	Fama<br>
+                •	Estatus  <br>
+                •	Idea<br>
+                •	Plan de acción <br>
+                •	Necesidad <br><br>
+                <b> Plan para emprender el negocio</b> <br>
+                •	Define el producto o servicio <br>
+                •	Equipo de trabajo    <br>                                        
+                •	Público o mercado <br>
+                •	Modelo de negocio<br>
+                •	Plan de financiamiento <br>
+                •	Debilidades de negocios <br>
+                •	Plan de medición <br><br>
+                <b> Trimestre 1 </b>   <br>                                                               
+                •	Actividades  <br>                                                 
+                •	Inversión   <br>                                                   
+                •	Ganancia <br><br>
+                <b>Trimestre 2 </b><br>
+                •	Actividad<br>
+                •	Ganancia o perdida <br><br>
+                
+                <b>Trimestre 3</b><br>
+                •	Actividad 3<br>
+                •	Ganancia o perdida<br>
+                •	Restruccion del plan <br><br>
+                
+                <b>Trimestre 4</b><br>
+                •	Actividad 4<br>
+                •	Análisis anual <br>
+                •	Ganancia<br>
+                •	Riesgos<br>
+                </p>
+            
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia seis-->
+     <div class="row" id="Ponen6" style="display: none;">
+        <div class="row-12">
+            <h2>6. DETENCIÓN Y SEGMENTACIÓN DE OBJETOS CON DEEP LEARNING</h2><br>
+            <p><b>Juan Alberto Antonio Velásquez <br>
+                Tema: DETENCIÓN Y SEGMENTACIÓN DE OBJETOS CON DEEP LEARNING<br>
+                Institución: Tecnológico de Estudios Superiores de Jocotitlan <br></b></p>
+                <div align="center"> <img src="./img/Ponencia6.jpg" width="500" alt="500"></div></br>
+                
+                <p>
+                <b>•	Machine Learning</b><br>
+                 Es un conjunto de IA <br>
+                 <b>•	Deep Learning</b><br>
+                Es un conjunto de Machine Learning <br>
+                Usa redes neuronales para simular las decisiones que un human realiza.<br><br>
+                
+                <b>•	Inteligencia artificial </b><br>
+                La teoría y desarrollo de sistemas informáticos capaces de realizar tareas necesarias.<br><br>
+                
+                <b>•	Aplicaciones de Deep Learning </b><br>
+                MI/DI with <br>
+                Tools<br><br>
+                
+                <b>•	Aplicaciones de Deep Learning </b><br>
+                Traducción automática de redes.<br>
+                Detención de rostros.<br>
+                Traducción visual al instante.<br><br>
+                
+                <b>•	Limitaciones</b> <br>
+                Extracción de características Deep Learning<br>
+                Machine Learning mas representación Learning<br>
+                </p>
+            
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia siete-->
+     <div class="row" id="Ponen7" style="display: none;">
+        <div class="row-12">
+            <h2>7. MANUFACTURA ADITIVA</h2><br>
+            <p><b>Carlos Honorio de la cruz alemán<br>
+                Tema: MANUFACTURA ADITIVA<br>
+                Institución: CINVESTAV Institución Politécnico Nacional</b><br> </p><br>
+                <div align="center"> <img src="./img/Ponencia7.jpg" width="500" alt="500"></div></br>
+
+                <p>
+                <b>Diversas técnicas asociadas  a la manufactura aditiva</b><br>
+                •	Esterealigrafia (SLA)<br>
+                •	Sinteriza selectiva por láser (SLS)<br>
+                •	Deposición de filamento fundido (FDM)<br><br>
+                
+                <b>Proceso</b><br>
+                •	Cad <br>
+                •	STL corvert<br>
+                •	File transfer mochine- código 6<br>
+                •	Machine setup<br>
+                •	Buld <br>
+                •	Remsye <br>
+                •	Post-process<br>
+                •	Aplication <br><br>
+                
+                <b>STL</b><br>
+                Consiste en un archivo lista de caras triangulares que definen a la superficie de un objeto tridimensional, este triángulo se identifica de manera única para cada línea.
+                </p>
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia ocho-->
+     <div class="row" id="Ponen8" style="display: none;">
+        <div class="row-12">
+            <h2>8. AGENTES CON VERSIÓNALES EN INTELIGENCIA ARTIFICIAL: ACTUALIDAD Y RETOS FUTUROS</h2><br>
+            <p> <b>
+                Francisco Hiram calvo castro<br>
+                Tema: AGENTES CON VERSIÓNALES EN INTELIGENCIA ARTIFICIAL: ACTUALIDAD Y RETOS FUTUROS<br>
+                Institución: Centro de Investigación en Computación-IPN</b><br>
+                <p>
+                <div align="center"> <img src="./img/Ponencia8.jpg" width="500" alt="500"></div></br>
+
+                <p>
+                Hacer referencia a un conjunto de tecnologías que permiten que los dispositivos y aplicaciones con bots de chat, conversen con las personas empleando sus lenguajes naturales.<br>
+                
+                <b> Emplea el aprendizaje automático y el procesamiento del lenguaje natural para recopilar y analizar lenguajes comprenderlos y luego generar respuestas similares a los humanos.<br>
+                Servicio al cliente</b> <br>
+                •	Respuesta a preguntas <br>
+                •	Recomendaciones personalizadas<br> 
+                •	Procesamientos de pedidos, pagos y devoluciones <br>
+                •	Suministro de extractos y saldos de cuentas <br>
+                •	Apertura y cierre de cuentas <br>
+                •	Realización de reservas de viajes <br><br>
+                
+                <b>Servicios al paciente </b><br>
+                •	Evaluación de síntomas <br>
+                •	Supervisión de estado de salud <br>
+                •	Localización de proveedores <br>
+                •	Programación de citas <br>
+                •	Preinscripción medicas<br>
+                •	Apoyo al paciente y a la familia <br>
+                </p>
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia nueve-->
+     <div class="row" id="Ponen9" style="display: none;">
+        <div class="row-12">
+            <h2>9. CONNNECTING LOT DEVICES TO CLOUND CERVICES</h2><br>
+            <p><b>
+                Yair Rivera Julio <br>
+                Tema: CONNNECTING LOT DEVICES TO CLOUND CERVICES<br>
+                Institución: Institución Universitaria Americana (co) <br></b>
+            </p>
+            <div align="center"> <img src="./img/Ponencia9.png" width="500" alt="500"></div></br>
+            <p>
+                •	Unión<br>
+                •	Una red inteligente <br>
+                •	Posibilidad <br><br>
+                
+                En la actualidad se necesita de una buena forma de pensar para tener un buen contacto para plataforma a desarrollar aplicaciones HNS 
+                Servicios móviles de Huawei, para desarrollar un mejor manejo de usuarios vista de software.<br>
+                
+                <b>Más de 60 librerías gratuitas.</b><br>
+                •	Servicio<br>
+                •	Seguridad<br>
+                •	Audio y video <br>
+            </p>
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia diez-->
+     <div class="row" id="Ponen10" style="display: none;">
+        <div class="row-12">
+            <h2>10. Inteligencia Artificial </h2><br>
+            <p><b>Dr. David Tinoco Varela<br>
+                Institución: Facultad de Estudios Superiores Cuautitlán (UNAM)<br>
+                Tema: Inteligencia Artificial<br></b>
+            </p>
+            <div align="center"> <img src="./img/Ponencia10.jpg" width="500" alt="500"></div></br>
+            <p>
+                Se utilizan prótesis inteligentes con redes neuronales, utilizando software y hardware, para poder realizar este proyecto, se utilizan las prótesis, mediante interfaces y que todos los que realizan este tipo de trabajo sean capacitados o especialistas dentro del área. <br>
+                <b>Conceptos básicos</b>  <br>
+                <b>IA:</b> la conjugación de herramientas, de lo que nos rodea, es similar todo lo que se utiliza.<br>
+                Situaciones que la IA no puede resolver la IA, dentro de las maquinas no que según esclavizaran a loa humanos ya que tienden a ocupar un algoritmo muy eficiente para este tipo de máquinas. <br>
+                <b>Herramientas IA</b><br>
+                -Algoritmos genéticos <br>
+                -reconocimiento <br>
+                -redes neuronales <br>
+                Algoritmo más conocido, imitar la forma de aprender, es decir, la forma en que vemos las cosas <br>
+                </p>
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia once-->
+     <div class="row" id="Ponen11" style="display: none;">
+        <div class="row-12">
+            <h2>11. App-Hipo</h2><br>
+            <p><b>Mtra. Erika Cortes Nazar <br>
+                Institución: Tecnológico de Estudios Superiores de San Felipe del Progreso <br>
+                Tema: App-Hipo</b><br>
+            </p>
+            <div align="center"> <img src="./img/Ponencia11.jpg" width="500" alt="500"></div></br>
+            <p>
+                <b>Cuando nace la idea.</b> <br>
+                -junio del 2021<br>
+                -Híper-app-hipo<br>
+                -Hipo-app (derechos de autor)<br>
+                -App-hipo<br><br>
+                <b>¿Por qué nace la idea?</b><br>
+                -Participar en POSIBLE 2022<br>
+                -Como un modelo de Negocio <br><br>
+                <b>Problemática</b> <br>
+                -Dirigido a la comunidad rural, de un mal diagnostico endocrinólogo<br>
+                -Covid-19<br>
+                -Médico general <br>
+                -Médico internista<br><br>
+                <b>Objetivos</b> <br>
+                -Desarrollar App<br>
+                -Android Estudio <br>
+                -Conocimiento Java<br></p>
+            
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Ponencia doce-->
+     <div class="row" id="Ponen12" style="display: none;">
+        <div class="row-12">
+            <h2>12. Fortinet México</h2><br>
+            <p><b>Ing. Juan Carlos Cervantes Díaz <br>
+                Institución: Fortinet México<br>
+                Tema: “Fortinet Security Fabric for OT” </b><br>
+            </p>
+            <div align="center"> <img src="./img/Ponencia12.jpg" width="500" alt="500"></div></br>
+            <p>
+                <b>Empresa de ciberseguridad</b> <br>
+                -Monitor, control, operar <br>
+                -Industrial automatizado <br>
+                -Diversos industriales <br>
+                -All numerable condiciones <br><br>
+                <b>Terminología </b><br>
+                -OT, CI, KS, SCADA, FORD <br><br>
+                <b>Donde se encuentra</b> <br>
+                -Sector químico <br>
+                -sector de transporte <br>
+                -Energética<br>
+                -Minería<br>
+                -Salud <br><br>
+                <b>Factores que impulsan OT</b> <br>
+                -Ataques digitales <br>
+                -Acceso remoto <br>
+                -Integración a terceros <br><br>
+                <b>Norma a utilizar</b> <br>
+                IT: OSI, ISO<br>
+                AT: ISA<br>
+                </p>
+           
+
+        </div>
+                                  
+    </div>
+    <!--Fin Ponencia -->
+
+    <!--Tecer Corte-->
+    <!--objetivo-->
+     <div class="row" id="ObjetivoM" style="display: none;">
+        <div class="row-12">
+            <h2>Objetivo De La Materia</h2><br>
+            <div align="center"> <img src="./img/Objetivo.jpg" width="500" alt="500"></div></br>
+            <b><p align="center">
+                "Identifica la funcion de los marcor de referencia para la gestion de servicios de TI e identificar las coincidencias y diferencias en la administracion
+                de sistemas de informacion y servicios de tecnologias de la informacion"
+            </p></b>
+        </div>
+                                  
+    </div>
+    <!--Fin Objetivo-->
+
+    <!--Apuntes-->
+     <div class="row" id="ApuntesTC" style="display: none;">
+        <div class="row-12">
+            <h2>Apuntes En Clase Tema 3</h2><br>
+            
+            <b><p>3.1 Las mejores prácticas para la gestión de servicios de TI</p></b>
+            <p> • Riesgos y conformidad<br>
+                • Cambios<br>
+                • Información y balance de la tecnología<br>
+                • Operaciones<br>
+                • Estrategia de negocios<br>
+            </p><br>
+
+            <b><p>3.1.3 riesgo y conformidad</p></b>
+            <p> • Referencia a la incertidumbre del resultado<br>
+                • Gestión de riesgo<br>
+                • 3 tipos de riesgo según ÚTIL (Contrato, diseño, operativos, mercado)<br>
+            </p><br>
+
+            <b><p>3.1.2 cambios </p></b>
+            <p> • Gestor de cambios: administración todos los documentos que autorizan los cambios en la infraestructura de TI.<br>
+                • Asegurar la aplicación de estándares, procesos para la atención de los cambios.<br>
+                • Cambios no organizados, organización fuera de control.<br>
+            </p><br>
+
+            <b><p>Aprobación y planificación<br> Principales actividades de la gestión de cambios</p></b>
+            <p> • Registro<br>
+                • Aceptación<br>
+                • Clasificación menor significativo, mayor urgente<br>
+                • Aprobación y planificación<br>
+                • Prueba<br>
+                • Implementación<br>
+                • Evaluación<br>
+            </p><br> 
+
+            <b><p>Planificación </p></b>
+            <p> • Aprobación financiera<br>
+                • Aprobación técnica<br>
+                • Aprobación del negocio<br>
+                • Reuniones del CAB<br>
+                • Análisis de impacto<br>
+            </p><br>
+
+            <b><p>Coordinación</p></b>
+            <p> • De los especialistas de productos<br>
+                • Construcción o creación si corresponde<br>
+            </p><br>
+
+            <b><p>3.1.3 información y balance de la tecnología</p></b>
+            <p> • TI enfocada a la recolección de información<br>
+                • Enfocada a la innovación en los procesos de negocio, TI seguridad<br>
+            </p><br>
+
+            <b><p>3.1.4 operaciones</p></b>
+            <p> • Gestión<br>
+                • Accesos, cuentos, incidentes, problemas, cambios<br>
+            </p><br> 
+
+            <b><p>Gestion</p></b>
+            <p> Es una diligencia, entendida como un trámite necesario para conseguir algo o resolverlo en un asunto habitualmente de carácter administrativo o que conlleva documentación conjunto de acciones u operaciones relacionadas con la administración y dirección de una organización.
+                Este concepto se utiliza para hablar de proyectos o en general de cualquier tipo de actividades que requiera procesos de planificación.
+                <b><p> Ejemplo</p></b>
+                Uso de la tecnología
+                Un sistema capaz de almacenar todos los datos referentes a las actuaciones de la empresa de forma integrada y que además disponga de la información de forma fácil, accesible y transparente, es de vital importancia para realizar una excelente gestión de cenicientos.                 
+            </p><br> 
+        </div>                          
+    </div>
+    <!--Fin tema 3-->
+
+    <!--inicio Tema 5-->
+    <div class="row" id="ApuntesTC2" style="display: none;">
+        <div class="row-12">
+            <h2>Apuntes En Clase Tema 5</h2><br>
+            <b><p>5.1 Conceptos Generales</p></b>
+            <p><b>Administración:</b> Funcionamiento estructural y rendimiento de las organizaciones.<br>
+                <b>Sistemas de información:</b> Conjunto de elementos que están relacionados que recolectan, almacenan y distribuyen información
+                Entrada, salida, procesamiento<br>
+                <b>Servicio:</b> actividad que satisface las necesidades al cliente, no son bienes materiales, más bien son intangibles <br>
+                <b>TI:</b> aplicaciones de ordenadores, redes, telecomunicaciones para transmitir, recolectar información<br>
+                <b>Servicio TI:</b> Conjunto de actividades que buscan responder a las necesidades propias de una organización.<br>
+            </p><br> 
+
+            <b><p>5.2 Administración de SI</p></b>
+            <p> <b>Define:</b> estrategias y modelos de desarrollo de aplicaciones <br>
+                <b>Contiene:</b> estrategias SI concentrados en red dimensional estratégicas correctivas y entorno global.<br>
+                <b>Arquitectura de SI internacionales </b>
+                Franquicia, transnacional, multinacional<br>
+                <b>Ayudando </b>
+                Organización TI, administración, servicios de usuario,  adm TI<br>
+                <b>Retos:</b> ESTÁNDARES DEN NEGOCIO, EXPECTATIVAS SOCIALES, CAMBIOS DE ORGANIZACIÓN<br>
+                <b>IMPLICAN:</b> DIRECTIVOS, GENERAL, INFORMACIÓN, TI<br>
+                <b>Soluciones</b>
+                Subcontratación extranjera, cambios de los procesos de negocio<br>
+                <b>Análisis:</b> problemas<br>
+                <b>Diseño:</b> detalla como satisfacer los requisitos de la información<br>
+                <b>Estrategia paralela:</b> enfoque de conversión seguro y conservado en la que tanto el sistema antiguo como posible instituto opera junto durante un tiempo.<br>
+                <b>Estrategia de cambio directo:</b> enfoque de conversión riesgoso en el que el sistema nuevo sustituye totalmente del antiguo.<br>
+            </p><br> 
+
+            <b><p>5.3 administración de servicios TI</p></b>
+            <p>Es un conjunto de capacidades organizacionales especializadas en proveer valor a los clientes en la forma de servicios<br> 
+                <b>Objetivo</b>
+                Asegurar que los servicios estén adecuados alineadamente a las necesidades del negocio los costos se calculan tomando en cuenta la consideración todos los elementos utilizados.<br> 
+                <b>Estrategia de ITSM</b>
+                Buscan proporcionar de manera consiente los servicios con la capacidad requerida.
+                Optimizan el costo del proveedor de servicios.
+                Logran la alineación de las organizaciones.<br> 
+                <b>Métodos herramienta o técnicas para administración de servicios de TI</b><br> 
+                •	Evaluar el desempeño de la función de TI<br> 
+                •	Planeación control de presupuestos.<br> 
+                •	Calidad, control de proyectos.<br> 
+                •	Desarrollo y mantenimiento del sistema. <br> 
+                
+            </p><br> 
+
+            
+            <b><p>5.4 Comparativa Administracion de TI vs Administracion de SI</p></b>
+            <div align="center"> <img src="./img/comparativa.png" width="500" alt="500"></div></br>
+
+        </div>
+                                  
+    </div>
+    <!--fin Tema 5-->
+
+    <!--primer trabajo-->
+    <div class="row" id="marcosTC" style="display: none;">
+        <div class="row-12">
+            <h2>Marcos de Referencia Gestion TI</h2><br>
+           <p>Investigacion que nos ayudara a comprender los diferentes marcos para la gestion TI asi como sus diversas areas tecnologicas que aplican cada una.</p>
+            <div align="center"><embed src="./files/Marcos.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+        </div>
+                                  
+    </div>
+    <!--Fin de primer trabajo-->
+
+    <!--segundo trabajo-->
+    <div class="row" id="divTCCasoP" style="display: none;">
+        <div class="row-12">
+            <h2>CityTime de Nueva York: Un Proyecto de Que si Fracasa</h2><br>
+           <p>Es un trabajo el cual nos habla un poco sistemas que se encontraban desarollandose pero se cambiaron los presupuestos que afectaban a los interesados</p>
+            <div align="center"><embed src="./files/citytime.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+        </div>
+                                  
+    </div>
+    <!--Fin de segundo trabajo-->
+
+    <!--tercer trabajo-->
+    <div class="row" id="divTCCasoS" style="display: none;">
+        <div class="row-12">
+            <h2>DataCard Group Resideña Su Forma de Trabajo</h2><br>
+           <p>Como una empresa que ya era exitosa logro buscar la forma de poder ampliar sus horizontes para lograr duplicar su valor economico y comercial.</p>
+            <div align="center"><embed src="./files/datacard.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+        </div>
+                                  
+    </div>
+    <!--Fin de tercer trabajo-->
+
+    <!--cuarto trabajo-->
+    <div class="row" id="divTCEjercicio" style="display: none;">
+        <div class="row-12">
+            <h2>Ejercicio de ITIL</h2><br>
+           <p>Mostramos un ejemplo de check list para la evaluacion de un area tecnologia o del lugar que se implementara un negocio</p>
+            <div align="center"><embed src="./files/Ejercicio.pdf" type="application/pdf" width="100%" height="600px"  zomm="100" /></div>
+        </div>
+                                  
+    </div>
+    <!--Fin de cuarto trabajo-->
+</div>
+</body>
+</html>                 
